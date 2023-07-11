@@ -1,0 +1,63 @@
+.dialog-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  
+  .dialog-message {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .dialog-buttons {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .btn-yes,
+  .btn-no {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .btn-yes {
+    background-color: #4caf50;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  .btn-no {
+    background-color: #e53935;
+    color: #fff;
+  }
+  
+  .btn-yes:hover,
+  .btn-no:hover {
+    opacity: 0.8;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .dialog-title {
+      font-size: 20px;
+    }
+  
+    .dialog-message {
+      font-size: 14px;
+    }
+  
+    .btn-yes,
+    .btn-no {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
+  .mat{
+    margin-top: 100px;
+  }

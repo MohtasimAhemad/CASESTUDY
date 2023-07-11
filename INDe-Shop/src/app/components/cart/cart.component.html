@@ -1,0 +1,60 @@
+<body>
+    <div class="container" >
+        <div class="row" *ngIf="addedCartProducts.length != 0">
+
+            <div class="col-lg-8"  >
+                
+                <div class="cart">
+                    <h2>Your Cart</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Price</th>
+                                <th>Quantity</th>
+                                <th>Product Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let product of addedCartProducts">
+                                <td>
+                                    <img src="{{product.image}}" alt="{{product.name}}" width="70">
+                                </td>
+                                <td>{{product.name}}</td>
+                                <td><strong> {{product.price | currency: 'INR'}}</strong></td>
+                                <td>
+                                    <div class="quantity-control">
+                                        <button (click)="reduceQuantity(product)" class="btn btn-outline-danger quantity-btn ">-</button>
+                                        <span class="quantity-value">{{product.quantity}}</span>
+                                        <button (click)="addQuantity(product)" class=" btn btn-outline-success quantity-btn">+</button>
+                                    </div>
+                                </td>
+                                <td><strong>{{product.quantity * product.price | currency: 'INR'}}</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 ">
+                <div class="checkout">
+                    <h2 style="text-align: center;">Cart Total</h2>
+                    <p>Total Quantity: <strong>{{ totalQuantity }}</strong></p>
+
+                    <p style="margin-right:50px">Total Price: <strong>{{ totalPrice | currency: 'INR'}} </strong></p>
+                    <!-- <div class="checkout-details">
+                    </div> -->
+
+                        <button (click)="moveToCheckout()" class="btn btn-primary "
+                        *ngIf="userId && userRole=='customer'">Checkout</button>
+                </div>
+                
+            </div>
+              <!-- if cart is empty then display a message -->
+              <div style="color:red ;font-size: 50px;" *ngIf="addedCartProducts.length == 0" class="alert alert-danger" role="alert">
+                Nothing here...please add something
+            </div> 
+        </div>
+    </div>
+</body>

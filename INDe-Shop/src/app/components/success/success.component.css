@@ -1,0 +1,40 @@
+.card{
+    background: url(../../../assets/images/addpro.jpg);
+    size: 100px;
+    height: 400px;
+    color: rgb(255, 255, 255);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left: 40px;
+    padding-top: 40px;
+    font-weight: 20px;
+    font-size: larger;
+}
+.card1{
+    /* background: url(../../../assets/images/final1.jpg); */
+    background-color: rgb(42, 133, 133);
+    size: 50px;
+    height: 100px;
+}
+.success{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 2rem;
+    font-family: 'Times New Roman';
+}
+h2{
+    font-weight: bold;
+    font-family:'Times New Roman' ;
+}
+a{
+    font-weight: bolder;
+    margin-left: 2rem;
+    color: gold;
+}
+
+tr{
+    color: rgb(217, 226, 43);
+    font-weight: 50px;
+    text-align: center;
+    padding-left: 50px;
+    padding-top: 100px;
+}

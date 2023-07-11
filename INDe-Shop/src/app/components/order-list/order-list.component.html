@@ -1,0 +1,30 @@
+<div class="order_padding">
+    <h2>Order Details</h2>
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <table class="order-table">
+        <tr class="table-header">
+          <th width="30%"><strong>Product Name</strong></th>
+          <th width="30%">Quantity</th>
+          <th width="30%">Unit Price</th>
+          <th width="30%">Total Amount</th>
+          
+        </tr>
+        <ng-container *ngFor="let order of orderItems">
+          <tr *ngFor="let item of order.cartItems" class="table-row">
+            <td>{{ item.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price }}</td>
+            <td >{{ order.totalPrice }}</td>
+
+          </tr>
+          
+          
+        </ng-container>
+      </table>
+    </div>
+  </div>
+</div>
+
+</div>

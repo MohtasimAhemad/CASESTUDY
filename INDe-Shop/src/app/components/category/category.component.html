@@ -1,0 +1,63 @@
+<div class="card-top container-fluid">
+  <div class="container d-flex">
+      <div class="item">
+          <a>
+              <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" routerLink="" alt="">
+              <h6>All products</h6>
+           
+          </a>
+      </div>
+  
+      <div class="item">
+          <a>
+              <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" routerLink="/category/Electronics"alt="">
+              <h6>Electronics</h6>
+          </a>    
+      </div>
+      &nbsp;
+      <div class="item">
+          <a>
+              <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" routerLink="/category/Fashion"alt="">
+              <h6>Fashion</h6>
+          </a>
+      </div>
+      &nbsp;
+      <div class="item">
+          <a>
+              <img style="width: 62px; margin-top: 5px;" src="https://rukminim1.flixcart.com/image/580/696/kkh6zrk0/jewellery-set/o/w/z/gt-ns-862-matushri-art-original-imafzt9teacakjyn.jpeg?q=50"  routerLink="/category/Books"alt="">
+              <h6>Jewllery</h6>
+          </a>
+      </div>
+  </div>
+</div>
+
+<br>
+<div class="row" style="margin-left:30px;margin-right:20px ;">
+  <div  class="col-md-3" *ngFor="let product of productList">
+      <div style="background-color:rgb(252, 250, 250);" class="card mb-4 shadow-sm">
+          <img class="bd-placeholder-img card-img-top p-2" width="100" height="200"
+            src={{product.image}} />
+        
+          <div class="card-body" style="height:270px ;">   
+            <p class="card-text">
+            <strong>{{product.name}}</strong>
+          </p>
+            <p class="card-text">
+              <strong>{{product.price | currency:'INR' }}</strong>
+            </p>
+            <p class="card-text" style="font-size: 0.875em;">
+              <i >{{product.category}}</i>
+            </p>
+            <p class="card-text"style="font-size: 0.875em;" >
+              <Strong>{{product.brand}}</Strong>
+            </p>
+            <p class="card-text" style="font-size: small;">{{product.description }}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group ">
+                <button  type="button" (click)="addToCart(product)" class="  button" >Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>

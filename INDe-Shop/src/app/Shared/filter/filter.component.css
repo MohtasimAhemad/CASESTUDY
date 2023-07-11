@@ -1,0 +1,30 @@
+#menu-outer {
+	height: 84px;
+	padding-top: 80px;
+	
+}
+
+.table {
+	display: table; 
+	margin: 0 auto;
+}
+
+ul#horizontal-list {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 10px;
+	}
+	ul#horizontal-list li {
+		display: inline;
+	}
+	button{
+		/* margin-right: 50px; */
+		border-radius: 60px;
+		color: rgb(254, 254, 254);
+		background-color: #f48462;
+		margin-left:200px ;
+		
+	}
+	
+
+

@@ -1,0 +1,116 @@
+.nav-item{
+  padding-left: 5px;
+}
+
+.row{
+  margin: 0 10px;
+}
+
+.col{
+  padding: 8px 8px;
+
+
+}
+
+.card{
+  height: 340px;
+  border-radius: 10px;
+}
+
+.card:hover{
+  border: 3px solid cornflowerblue;
+  border-radius: 10px;
+}
+
+.cat-img{
+  border-bottom: 3px solid black;
+  border-radius: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+::ng-deep label.star {
+  
+  padding: 0 5px !important;
+  font-size: 15px !important;
+  color: #ddd !important;
+ 
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .dropdownMenuLink:active .dropdown-menu{
+    display: flex;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    min-width: 10rem;
+    padding: 0.5rem 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #2ee50a;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid rgba(240, 19, 19, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.175);
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+  }
+  
+  .dropdown-item:hover,
+  .dropdown-item:focus {
+    color: #0505fbf3;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  .search input[type=text]{
+        width:300px;
+        height:25px;
+        border-radius:25px;
+        border: none;
+    }
+         
+    .search{
+        float:right;
+        margin:7px;
+    }
+         
+    .search button{
+        background-color: #0074D9;
+        color: #f2f2f2;
+        float: right;
+        padding: 5px 10px;
+        margin-right: 16px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+    }

@@ -1,0 +1,88 @@
+.merchant {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .merchant-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .merchant-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .merchant-row:hover {
+    background-color: #e2e2e2;
+  }
+  
+  .merchant-row td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .btn-danger {
+    color: #fff;
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-info {
+    color: #fff;
+    background-color: #3498db;
+    border-color: #3498db;
+    padding: 6px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-danger:hover,
+  .btn-danger:focus {
+    background-color: #c0392b;
+  }
+  
+  .btn-info:hover,
+  .btn-info:focus {
+    background-color: #2980b9;
+  }
+  
+  .btn-danger .btn-icon,
+  .btn-info .btn-icon {
+    margin-right: 5px;
+    font-size: 16px;
+  }
+  
+  .btn-danger .btn-text,
+  .btn-info .btn-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .btn-danger .btn-text {
+    font-weight: bold;
+  }
+  
+  .btn-info .btn-text {
+    font-weight: bold;
+  }
+  
+  .btn-danger .btn-icon:before {
+    content: '\f014';
+    font-family: FontAwesome;
+  }
+  
+  .btn-info .btn-icon:before {
+    content: '\f044';
+    font-family: FontAwesome;
+  }
+  

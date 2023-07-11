@@ -1,0 +1,184 @@
+
+<section style=" background-color: #eee ">
+  <br><br><br><br>
+  
+
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img
+              src="../../../assets/images/profile.jpg"
+              alt="avatar"
+              class="rounded-circle img-fluid"
+              style="width: 100px; height: 100px"
+            />
+            <h5 class="my-3">{{ userDetail?.userName }}</h5>
+            <p class="text-muted mb-1">{{ userDetail?.role }}</p>
+            <p class="text-muted mb-4"></p>
+            <!-- <div class="d-flex justify-content-center mb-2">
+              <button type="button" class="btn btn-primary">Follow</button>
+              <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <div class="card mb-4">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Full Name</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ userDetail?.userName }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Email</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ userDetail?.email }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Phone</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ userDetail?.mobileNo }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Role</p>
+              </div>
+              <div class="col-sm-9">
+                <p class="text-muted mb-0">{{ userDetail?.role }}</p>
+              </div>
+            </div>
+            <hr />
+            <div class="row">
+              <div class="col-sm-3">
+                <p class="mb-0">Address</p>
+              </div>
+              <div class="col-sm-9" >
+                <p class="text-muted mb-0">
+                  {{ userDetail!.address.houseNumber }}, <br/>
+                  {{ userDetail!.address.street }},<br />
+                  {{ userDetail!.address.city }},
+                  {{ userDetail!.address.state }},<br />
+                  {{ userDetail!.address.pincode }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="margin-left: 80%">
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Update Profile
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Update Profile</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form [formGroup]="updateForm" (ngSubmit)="update()">
+            <!-- 2 column grid layout with text inputs for the first and last names -->
+            <div class="row mb-3">
+              <div class="form-outline">
+                <input type="text" id="form6Example1" class="form-control" [value]="userDetail?.userName"
+                  formControlName="userName" />
+                <label class="form-label" for="form6Example1">Name</label>
+              </div>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mb-3">
+              <input type="email" id="form6Example5" class="form-control" [value]="userDetail?.email"
+                formControlName="email" />
+              <label class="form-label" for="form6Example5">Email</label>
+            </div>
+
+            <!-- Number input -->
+            <div class="form-outline mb-3">
+              <input type="tel" id="form6Example6" class="form-control" [value]="userDetail?.mobileNo"
+                formControlName="mobileNo" />
+              <label class="form-label" for="form6Example6">Phone</label>
+            </div>
+
+            <div>Address:</div>
+  <br>
+            <!-- Text input -->
+            <div class="row mb-2">
+              <div class="col">
+                <div class="form-outline mb-3">
+                  <input type="number" id="form6Example4" class="form-control" [value]="userDetail!.address"
+                    formControlName="address.houseNumber" />
+                  <label class="form-label" for="form6Example4">House Number</label>
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="form-outline mb-3">
+                  <input type="text" id="form6Example5" class="form-control" [value]="userDetail!.address"
+                    formControlName="address.street" />
+                  <label class="form-label" >Street</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-2">
+              <div class="col">
+                <div class="form-outline mb-3">
+                  <input type="text" id="form6Example6" class="form-control" [value]="userDetail!.address"
+                    formControlName="address.city" />
+                  <label class="form-label" for="form6Example6">City</label>
+                </div>
+              </div>
+              <div class="col">
+                <div class="form-outline mb-3">
+                  <input type="text" id="form6Example7" class="form-control" [value]="userDetail!.address"
+                    formControlName="address.state" />
+                  <label class="form-label" for="form6Example7">State</label>
+                </div>
+              </div>
+            </div>
+            <div class="row mb-2">
+              <div class="col">
+                <div class="form-outline mb-3">
+                  <input type="number" id="form6Example8" class="form-control" [value]="userDetail!.address"
+                    formControlName="address.pincode" />
+                  <label class="form-label" for="form6Example8">Pincode</label>
+                </div>
+              </div>
+            </div>
+
+            <!-- Submit button -->
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary btn-block mb-4" data-bs-dismiss="modal" aria-label="Close">
+                Update
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

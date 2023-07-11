@@ -1,0 +1,62 @@
+body{
+    padding-top: 50px;
+    background-color: #eee;
+}
+/* .gradient-custom-3 {
+    /* fallback for old browsers */
+    /* background: #84fab0; */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5)); */
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5)) */
+    
+    .gradient-custom-2 {
+        /* fallback for old browsers */
+        background: #fffefe;
+        
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: -webkit-linear-gradient(to right, #2e24ee, #3636d8, #3673dd, #4579b4);
+        
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: linear-gradient(to right, #2490ee, #6136d8, #5c1eee, #0a0ac6);
+        }
+
+
+
+
+/* .prod{
+    margin-left: 30%;
+    margin-right: 20%;
+    padding-top: 10px;
+    margin-top: 10px;
+    height:200px;
+    width:400px;
+    padding-bottom:100px;
+
+}
+.card{
+    border-color: cornflowerblue;
+    background: url(../../../assets/images/addpro.jpg);
+    
+    
+    
+}
+button{
+    margin-top: 2px;
+    margin-bottom: 1rem;
+}
+.form-group{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   color: rgb(116, 33, 205);
+   font-weight: 100px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.head{
+    color: rgb(116, 52, 190);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ */

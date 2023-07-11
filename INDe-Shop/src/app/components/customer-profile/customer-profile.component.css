@@ -1,0 +1,187 @@
+
+body{
+    padding-top: 50px;
+}
+
+.gradient-custom-3 {
+    /* fallback for old browsers */
+    /* background: #84fab0; */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5)) */
+    background-color: #eee;
+    }
+    .gradient-custom-4 {
+
+         /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+  
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    /* fallback for old browsers */
+    /* background: #84fab0; */
+    
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1)); */
+    
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1)) */
+    }
+
+
+
+
+/* 
+
+ 
+.profile{
+    /* text-align: center; *
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 420px;
+
+
+}
+button{
+    margin-right: 18rem;
+    border-radius: 30px;
+    background-color: aqua;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} 
+.prod{
+    margin-left: 35%;
+    margin-right: 20%;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 400px;
+    height: 800px;
+    
+}
+.card{
+    border-color: cornflowerblue;
+    background: url(../../../assets/images/shop.jpg);
+    
+}
+
+.form-group{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: rgb(238, 234, 241);
+}
+.head{
+    color: rgb(27, 27, 184);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+}
+h1{
+    font-family: 'Times New Roman';
+    font-weight: bolder;
+}  */
+/* Add this CSS code to your styles.css file */
+
+/* Card styles */
+.card {
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-body {
+    padding: 2rem;
+  }
+  
+  /* Profile image styles */
+  .card-body .rounded-circle {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Heading styles */
+  .card-body h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Modal styles */
+  .modal-body {
+    padding: 2rem;
+  }
+  
+  /* Form input styles */
+  .form-outline {
+    position: relative;
+  }
+  
+  .form-control {
+    padding: 0.5rem 1rem;
+  }
+  
+  .form-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 0.9rem;
+    color: #999;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+ .form-label {
+    top: -1rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+    color: #333;
+    background-color: #fff;
+    padding: 0 0.2rem;
+  }
+  
+  /* Submit button styles */
+  .modal-footer .btn-primary {
+    width: 100%;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .card-body .rounded-circle {
+      width: 100px;
+      height: 100px;
+    }
+  }
+  
+  .modal-title {
+    color: #3909fb;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .form-label {
+    color: #3909fb;
+  }
+  
+  .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .btn-primary {
+    background-color: #3909fb;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2e08d7;
+  }
+  

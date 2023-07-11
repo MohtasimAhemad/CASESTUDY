@@ -1,0 +1,30 @@
+input{
+    max-width: 20%;
+}
+.pre{
+    margin-top: 3rem;
+}
+button{
+    margin-top: 2px;
+}
+h4{
+    font-family: 'Times New Roman';
+}
+h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: blue;
+    font-size: 40px;
+}
+
+.container-fluid{
+    margin-top:40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 450px;
+    background-color: aqua;
+    width: 450px;
+    padding-bottom: 10px;
+}

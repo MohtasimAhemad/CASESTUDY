@@ -1,0 +1,180 @@
+/* table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-top: black;
+     background-color: rgb(243, 239, 233); 
+
+}
+table td {
+    border: 2px solid #ddd;
+    padding: 8px;
+}
+th{
+    border: 2px solid #ddd;
+    padding: 8px;
+    background-color: cadetblue;
+}
+.prod{
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.card{
+    border-color: cornflowerblue;
+    background: url(../../../assets/images/loginbackground.jpg);
+    
+}
+button{
+    margin-top: 2px;
+    margin-bottom: 1rem;
+}
+.form-group{
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+.head{
+    color: darkblue;
+    text-align: center;
+    font-family: 'Times New Roman';
+}
+body{
+    background: url(../../../assets/images/loginbackground.jpg);
+    margin: none;
+    padding: none;
+}
+.wallet{
+    font-weight: bold;
+    text-align: center;
+}
+.note{
+    font-weight: bold;
+}
+.main-content{
+    font-family: 'Times New Roman';
+} */
+
+.container {
+    margin-top: 40px;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .card-body {
+    padding: 1.25rem;
+  }
+  
+  .order-item-image {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .order-item-name {
+    font-weight: 500;
+  }
+  
+  .order-item-price {
+    font-weight: 500;
+  }
+  
+  .order-item-quantity {
+    margin-left: 0.5rem;
+  }
+  
+  .order-total-label {
+    font-weight: 500;
+  }
+  
+  .order-total-amount {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-block {
+    margin-top: 1rem;
+  }
+  .delivery-template {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .delivery-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .delivery-header h2 {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .edit-btn {
+    background-color: #ff9f00;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .delivery-content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .address {
+    flex-grow: 1;
+  }
+  
+  .address p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .delivery-info {
+    flex-shrink: 0;
+    text-align: right;
+  }
+  
+  .delivery-info p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .info {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .date {
+    font-weight: bold;
+    color: #ff9f00;
+    font-size: 16px;
+  }
+  

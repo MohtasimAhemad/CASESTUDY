@@ -1,0 +1,39 @@
+.order-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-header {
+  background-color: #cfdce9;
+  color: #212529;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+.table-row td {
+  padding: 8px;
+}
+
+.table-total {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.total-label {
+  text-align: right;
+}
+
+.total-value {
+  text-align: center;
+}
+
+.table-divider td {
+  padding: 0;
+  border-bottom: 1px solid #dee2e6;
+}
+.order_padding
+{
+  padding-top: 30px;
+}
