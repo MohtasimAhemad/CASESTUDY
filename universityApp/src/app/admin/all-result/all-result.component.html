@@ -1,0 +1,33 @@
+<div class="results-table">
+    <h2>All Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Seat No</th>
+          <th>Percentage</th>
+          <th>Subjects</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let result of results">
+          <td>{{ result.seatNo }}</td>
+          <td>{{ result.percentage }}</td>
+          <td>
+            <table>
+              <tr>
+                <th>Subject Code</th>
+                <th>Subject Name</th>
+                <th>Obtained Marks</th>
+              </tr>
+              <tr *ngFor="let subject of result.subject">
+                <td>{{ subject.subjectCode }}</td>
+                <td>{{ subject.subjectName }}</td>
+                <td>{{ subject.obtainedMark }}</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

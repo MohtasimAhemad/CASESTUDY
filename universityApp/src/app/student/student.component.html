@@ -1,0 +1,109 @@
+
+<!-- <form >
+  <div class="login-box">
+  <img src="result.png" width="200" height="150">        
+         
+          <input type="text" name="rollNo" placeholder="Enter Roll Number" required="required">
+          <input type="submit" name="submit" value="Search">    
+          <h1><a href="index.html">Back</a></h1>
+        </div>   
+      </form> -->
+      <h1><a routerLink="/student" >Back</a></h1>
+
+
+<div class="search-user">
+
+  <!-- <div class="search-form" *ngIf="!universityUser"> 
+    <h2>Search Result Seat Number</h2>
+    <div class="input-group">
+      
+      <label for="seatNo">Enter Seat No:</label>
+      <input type="text" id="seatNo" [(ngModel)]="seatNo" placeholder="Enter seat number">
+    </div>
+   <div> <img src="../../assets/result.png" width="50" height="40"> 
+    <button (click)="searchUser()">Search</button></div>
+  </div> -->
+  <div class="search-user">
+    <div class="search-form" *ngIf="!universityUser"> 
+      <!-- <div class="input-group">
+        <label for="seatNo">Enter Seat No:</label>         
+        <input type="text" id="seatNo" [(ngModel)]="seatNo" placeholder="Enter seat number">
+
+        <label for="motherName">Enter Mother's Name:</label>
+        <input type="text" id="motherName" [(ngModel)]="motherName" placeholder="Enter mother's name">
+        <button (click)="searchUser()">Check Result</button>
+      </div> -->
+      <div class="input-group">
+        <label for="seatNo">Enter Seat No:</label>
+        <input type="text" id="seatNo" [(ngModel)]="seatNo" placeholder="Enter seat number">
+      </div>
+      
+      <div class="input-group">
+        <label for="motherName">Enter Mother's Name:</label>
+        <input type="text" id="motherName" [(ngModel)]="motherName" placeholder="Enter mother's name">
+      </div>
+      
+      <div class="input-group">
+        <button (click)="searchUser()">Check Result</button>
+      </div>
+      
+    </div>
+  <div   id="result-table" *ngIf="universityUser">
+      <div class="navbar-logo">
+        <img src="../../assets/360_F_311043597_yg5Y7sxhDlST8GRAKt4FC8VsKsxlfC6U.jpg" alt="University Logo" width="150" height="150">
+     
+    <table>
+      <tr *ngIf="universityUser">
+        <th>Institute Name:{{universityUser.studentCollageName}}</th>
+        <th>Course:{{universityUser.course}}</th>
+        <th>Branch:{{universityUser.branch}}</th>
+        <th>Seat No:{{universityUser.seatNo}}</th>
+      </tr>
+      
+      <tr *ngIf="universityUser">
+        <th>Name:{{universityUser.fullName}} </th>
+        <th>Mother Name:{{universityUser.motherName}}</th>
+        <th>Gender:{{universityUser.gender}}</th>
+        <th>PRN:{{universityUser.prn}}</th>
+       
+      </tr>
+      <tr>
+        <th>subject code</th>
+        <th>Subject Name</th>
+        <th>obtainedMark</th>
+        <th>passing mark</th>
+        <th>full marks</th>
+      </tr>
+      <tr *ngFor="let subject of universityUser.result.subject">
+        <td>{{ subject.subjectCode }}</td>
+        <td>{{ subject.subjectName }}</td>
+        <td>{{ subject.obtainedMark }}</td>
+        <td>{{ 35}}</td>
+        <td>{{ subject.fullMarks }}</td>
+      </tr>
+      <tr>
+        <td colspan="2" class="footer">Total Marks</td>
+        <td>{{calculateTotalObtainedMarks()}}</td>
+        <td>175</td>
+        <td>500</td>
+
+      </tr>
+
+      <tr *ngIf="universityUser.result">
+      </tr>
+      <tr>
+        <td colspan="2" class="footer">Percentage</td>
+
+        <td>{{ universityUser.result.percentage}}%</td>
+      </tr>
+
+    </table>
+  </div>
+    <div>
+      <th>
+        <button (click)="printResult()">Print</button>
+        <button (click)="downloadResultPDF()">Download PDF</button>
+      </th>
+    </div>
+  </div>
+</div>

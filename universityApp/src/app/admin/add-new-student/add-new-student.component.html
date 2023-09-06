@@ -1,0 +1,119 @@
+
+
+<div class="add-student-container">
+  <h2>Add New Student</h2>
+  
+  <form [formGroup]="newCandidateForm" (submit)="addNewCandidate()">
+    
+    <!-- Personal Information -->
+    <div class="form-section" *ngIf="currentStep === 1">
+      <h3>Step 1: Personal Information</h3>
+      <!-- User name -->
+         <label for="userName">User Name: </label>
+         <input type="text" id="userName" formControlName="userName" placeholder="User Name">
+        <!-- Phone Number -->
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" id="phoneNumber" formControlName="phoneNumber" placeholder="Phone Number">
+         <!-- Email -->
+         <label for="email">Email:</label>
+         <input type="text" id="email" formControlName="email" placeholder="Email">
+
+         <!-- Password -->
+         <label for="password">Password</label>
+         <input type="password" id="password" formControlName="password" placeholder="Password">
+    
+      <!-- Add other personal information fields here -->
+      <button (click)="nextStep()">Next</button>
+    </div>
+    
+    <!-- Contact Information -->
+    <div class="form-section" *ngIf="currentStep === 2">
+      <h3>Step 2: Contact Information</h3>
+     <!-- First Name -->
+     <label for="firstName">First Name:</label>
+     <input type="text" id="firstName" formControlName="firstName" placeholder="First Name">
+     
+     <!-- Last Name -->
+     <label for="lastName">Last Name:</label>
+     <input type="text" id="lastName" formControlName="lastName" placeholder="Last Name">
+     
+     <!-- Full Name -->
+     <label for="fullName">Full Name:</label>
+     <input type="text" id="fullName" formControlName="fullName" placeholder="Full Name">
+     
+     <!-- Mother's Name -->
+     <label for="motherName">Mother's Name:</label>
+     <input type="text" id="motherName" formControlName="motherName" placeholder="Mother's Name">
+      <!-- Date of Birth -->
+    <label for="dateOfBirth">Date of Birth:</label>
+    <input type="text" id="dateOfBirth" formControlName="dateOfBirth" placeholder="Date of Birth">
+    
+    <!-- Gender -->
+    <label for="gender">Gender:</label>
+    <input type="text" id="gender" formControlName="gender" placeholder="Gender">
+    
+    <!-- Nationality -->
+    <label for="nationality">Nationality:</label>
+    <input type="text" id="nationality" formControlName="nationality" placeholder="Nationality">
+     <!-- Aadhaar Number -->
+    <label for="aadhaarNo">Aadhaar Number:</label>
+    <input type="text" id="aadhaarNo" formControlName="aadhaarNo" placeholder="Aadhaar Number">
+    
+    <!-- Student College Name -->
+    <label for="studentCollageName">Student College Name:</label>
+    <input type="text" id="studentCollageName" formControlName="studentCollageName" placeholder="Student College Name">
+    
+    <!-- Course -->
+    <!-- <label for="course">Course:</label>
+    <input type="text" id="course" formControlName="course" placeholder="Course">
+     -->
+      <label for="course">Course:</label>
+      <select id="course" formControlName="course" style="width: 300px; height: 30px;">
+        <option value="B.tech">Bachelor of Technology (BTech)</option>
+        <option value="B.E.">Bachelor Engineering (B.E) </option>
+        <option value="B.E.">Bachelor of Architecture (B.Arch) </option>
+        <option value="B.E.">Bachelor of Science (BSC) </option>
+        <option value="B.E.">Bachelor of Computer Application (BCA) </option>
+        <option value="B.E.">Master of Engineering (M.E) </option>
+        <option value="B.E.">Master of Technology (MTech) </option>
+        <option value="B.E.">Master of Science (MSC) </option>
+        <option value="B.E.">Master of Computer Application (MCA) </option>
+      </select>
+    
+    <!-- Branch -->
+    <label for="branch">Branch:</label>
+    <input type="text" id="branch" formControlName="branch" placeholder="Branch">
+      <!-- Add other contact information fields here -->
+      <button (click)="previousStep()">Previous</button>
+      <button (click)="nextStep()">Next</button>
+    </div>
+    
+    <!-- Address Information -->
+    <div class="form-section" *ngIf="currentStep === 3">
+      <h3>Step 3: Address Information</h3>
+      <!-- Address Section -->
+      <div formGroupName="address">
+        <label for="houseNumber">House Number:</label>
+      <input type="text" id="houseNumber" formControlName="houseNumber" placeholder="House Number">
+      
+      <!-- Street -->
+      <label for="street">Street:</label>
+      <input type="text" id="street" formControlName="street" placeholder="Street">
+      
+      <!-- City -->
+      <label for="city">City:</label>
+      <input type="text" id="city" formControlName="city" placeholder="City">
+      
+      <!-- State -->
+      <label for="state">State:</label>
+      <input type="text" id="state" formControlName="state" placeholder="State">
+      
+      <!-- Pincode -->
+      <label for="pincode">Pincode:</label>
+      <input type="text" id="pincode" formControlName="pincode" placeholder="Pincode">
+      </div>
+      <button (click)="previousStep()">Previous</button>
+      <button type="submit" (click)="addNewCandidate()">Submit</button>
+    </div>
+  </form>
+</div>

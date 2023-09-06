@@ -1,0 +1,57 @@
+<!-- <div class="table-container">
+    <h2>Registered Students</h2>
+    <table class="custom-table">
+      <thead>
+        <tr>
+          <th>Course Name</th>
+          <th>Branch Name</th>
+          <th>Roll Number</th>
+          <th>Name</th>
+          <th>Father Name</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.course }}</td>
+          <td>{{ student.branch }}</td>
+          <td>{{ student.seatNo }}</td>
+          <td>{{ student.fullName }}</td>
+          <td>{{ student.motherName }}</td>
+          <td>{{ student.gender }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   -->
+   <div class="table-container">
+    <h2>Registered Students</h2>
+  
+    <div class="search-bar">
+      <input type="text" placeholder="Search by Seat Number" (keyup)="searchBySeatNo($event)">
+    </div>
+  
+    <table class="custom-table">
+      <thead>
+        <tr>
+          <th>Course </th>
+          <th>Branch </th>
+          <th>Seat Number</th>
+          <th>Full Name</th>
+          <th>Mother Name</th>
+          <th>Gender</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of students">
+          <td>{{ student.course }}</td>
+          <td>{{ student.branch }}</td>
+          <td>{{ student.seatNo }}</td>
+          <td>{{ student.fullName }}</td>
+          <td>{{ student.motherName }}</td>
+          <td>{{ student.gender }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,29 @@
+<div>
+    <h2>Add New Result</h2>
+    <form (ngSubmit)="addResult()" #resultForm="ngForm">
+      <!-- <label for="id">ID:</label>
+      <input type="text" id="id" name="id" [(ngModel)]="newResult.id" required> -->
+  
+      <label for="seatNo">Seat No:</label>
+      <input type="text" id="seatNo" name="seatNo" [(ngModel)]="newResult.seatNo" required>
+  
+      <h3>Subjects:</h3>
+      
+      <div *ngFor="let subject of newResult.subject; let i = index">
+        <h4>Subject {{ i + 1 }}</h4>
+        <label for="subjectCode{{ i }}">Subject Code:</label>
+        <input type="text" id="subjectCode{{ i }}" name="subjectCode{{ i }}" [(ngModel)]="subject.subjectCode" required>
+      <br>
+        <label for="subjectName{{ i }}">Subject Name:</label>
+        <input type="text" id="subjectName{{ i }}" name="subjectName{{ i }}" [(ngModel)]="subject.subjectName" required>
+      <br>
+        <label for="obtainedMark{{ i }}">Obtained Marks:</label>
+        <input type="number" id="obtainedMark{{ i }}" name="obtainedMark{{ i }}" [(ngModel)]="subject.obtainedMark" required>
+      </div>
+      <!-- <label for="percentage">Percentage:</label>
+      <input type="number" id="percentage" name="percentage" [(ngModel)]="newResult.percentage" required> -->
+  
+      <button type="submit" [disabled]="!resultForm.valid">Add Result</button>
+    </form>
+  </div>
+  

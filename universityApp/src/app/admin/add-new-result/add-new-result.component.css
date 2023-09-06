@@ -1,0 +1,58 @@
+/* Style the form container */
+div {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Style the form itself */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style the labels */
+  label {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  /* Style the input fields */
+  input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+  }
+  
+  /* Style the subject section */
+  h3 {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  /* Style the subject labels and inputs */
+  h4 {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  /* Style the submit button */
+  button[type="submit"] {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
